@@ -63,6 +63,83 @@ $projects = [
 		'cover'=>'img/projets/auto/chriscarton.png',
 		'url'=>'chriscarton'
 	],
+	'popeo'=>[
+		'title'=>'Popeo',
+		'intro'=>"<p>Blabla.</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/popeo.png',
+		'url'=>'popeo'
+	],
+	'funster'=>[
+		'title'=>'Funster',
+		'intro'=>"<p>Blabla.</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/funster.png',
+		'url'=>'funster'
+	],
+	'femmesdebretagne'=>[
+		'title'=>'Femmes de Bretagne',
+		'intro'=>"<p>Blabla.</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/femmes_de_bretagne.png',
+		'url'=>'femmesdebretagne'
+	],
+	'artbox'=>[
+		'title'=>'Art Box',
+		'intro'=>"<p>Blabla.</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/artbox.png',
+		'url'=>'artbox'
+	],
+	'blogcolony'=>[
+		'title'=>'Blog Colony',
+		'intro'=>"<p>Blabla.</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/artbox.png',
+		'url'=>'blogcolony'
+	],
+	'gtliens'=>[
+		'title'=>'Gt Liens',
+		'intro'=>"<p>Blabla.</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/gtliens.png',
+		'url'=>'gtliens'
+	],
+	'handi'=>[
+		'title'=>'Handi Val de Seine',
+		'intro'=>"<p>Blabla.</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/handi.png',
+		'url'=>'handi'
+	],
+	'toprhu'=>[
+		'title'=>'Top Rhu',
+		'intro'=>"<p>Blabla.</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/toprhu.png',
+		'url'=>'toprhu'
+	],
+	'bzh'=>[
+		'title'=>'BZH Boutique',
+		'intro'=>"<p>Comment défendre l'indéfendable ? Et bien c'est le client qui voulait ça ! Et puis je n'ai fais que l'intégration (<i>prestashop</i>)</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/bzh.png',
+		'url'=>'bzh'
+	],
+	'trezulien'=>[
+		'title'=>'Camping de Trezulien',
+		'intro'=>"<p>Blabla.</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/trezulien.png',
+		'url'=>'trezulien'
+	],
+	'festimove'=>[
+		'title'=>'Festimove',
+		'intro'=>"<p>Blabla.</p>",
+		'background_color'=>'#58ABE0',
+		'cover'=>'img/projets/sdw/festimove.png',
+		'url'=>'festimove'
+	]
 	//À partir d'ici ce sont les projets en agence... 
 ];
 ?>

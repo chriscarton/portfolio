@@ -66,83 +66,17 @@
 	</div>
 	<div class="grid">
 		<?php 
-		echo project([
-			'title'=>'Popeo',
-			'intro'=>"<p>Blabla.</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/popeo.png',
-			'url'=>'popeo'
-		]); 
-		echo project([
-			'title'=>'Funster',
-			'intro'=>"<p>Blabla.</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/funster.png',
-			'url'=>'funster'
-		]); 
-		echo project([
-			'title'=>'Femmes de Bretagne',
-			'intro'=>"<p>Blabla.</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/femmes_de_bretagne.png',
-			'url'=>'femmesdebretagne'
-		]); 
-		echo project([
-			'title'=>'Art Box',
-			'intro'=>"<p>Blabla.</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/artbox.png',
-			'url'=>'artbox'
-		]); 
-		echo project([
-			'title'=>'Blog Colony',
-			'intro'=>"<p>Blabla.</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/artbox.png',
-			'url'=>'blogcolony'
-		]); 
-		echo project([
-			'title'=>'Gt Liens',
-			'intro'=>"<p>Blabla.</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/gtliens.png',
-			'url'=>'gtliens'
-		]); 
-		echo project([
-			'title'=>'Handi Val de Seine',
-			'intro'=>"<p>Blabla.</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/handi.png',
-			'url'=>'handi'
-		]); 
-		echo project([
-			'title'=>'Top Rhu',
-			'intro'=>"<p>Blabla.</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/toprhu.png',
-			'url'=>'toprhu'
-		]); 
-		echo project([
-			'title'=>'BZH Boutique',
-			'intro'=>"<p>Comment défendre l'indéfendable ? Et bien c'est le client qui voulait ça ! Et puis je n'ai fais que l'intégration (<i>prestashop</i>)</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/bzh.png',
-			'url'=>'bzh'
-		]); 
-		echo project([
-			'title'=>'Camping de Trezulien',
-			'intro'=>"<p>Blabla.</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/trezulien.png',
-			'url'=>'trezulien'
-		]); 
-		echo project([
-			'title'=>'Festimove',
-			'intro'=>"<p>Blabla.</p>",
-			'background_color'=>'#58ABE0',
-			'cover'=>'img/projets/sdw/festimove.png',
-			'url'=>'festimove'
-		]); 
+		echo project($projects['popeo']); 
+		echo project($projects['funster']); 
+		echo project($projects['femmesdebretagne']); 
+		echo project($projects['artbox']); 
+		echo project($projects['blogcolony']); 
+		echo project($projects['gtliens']); 
+		echo project($projects['handi']); 
+		echo project($projects['toprhu']); 
+		echo project($projects['bzh']); 
+		echo project($projects['trezulien']); 
+		echo project($projects['festimove']); 
 		?>
 	</div>
 </section>
