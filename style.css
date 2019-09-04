@@ -1,0 +1,147 @@
+body{
+	margin:0;
+	background-color:white;
+	font-family: 'Lora';
+}
+*{
+	box-sizing:border-box;
+}
+
+section{
+	min-height:100vh;
+	border:1px solid black;
+}
+
+h1,h2{
+	font-family: 'Open Sans';
+}
+
+#Intro{
+
+}
+
+.project{
+	
+	display:grid;
+	align-content: center;
+	justify-content: end;
+	position:relative;
+	overflow:hidden;
+	border:1px solid transparent;
+	transition:all 2s;
+}
+
+.project:hover{
+	border:1px solid silver;
+}
+
+.project .overlay{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	background-color:rgba(255,255,255,0.25);
+}
+
+.project .pattern{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	background-image:url('https://subtlepatterns.toptal.io/designers/subtlepatterns/wp-content/themes/tweaker7/images/transp_bg.png');
+	transform:rotate(-15deg) scale(2);
+	mix-blend-mode: multiply;
+
+}
+
+.project .background-image{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	background-color:rgba(0,0,0,0.25);
+	background-size:cover;
+	
+	transform:rotate(-15deg);
+	transition:all 0.25s;
+}
+.project:hover .background-image{
+	transform:rotate(-10deg) scale(1.25);
+
+}
+
+.project .encart{
+	transition:all 0.25s;
+	position:relative;
+	z-index: 1;
+	background-color:white;
+	opacity:0.85;
+	padding:25px;
+	margin:25px;
+	box-shadow:2px 2px 5px 0px rgba(0,0,0,0.25);
+}
+
+.project .encart:hover{
+	opacity:1;
+	box-shadow:3px 3px 10px 0px rgba(0,0,0,0.50);
+
+}
+
+
+.project .encart h1{
+	font-size:3vw;
+	margin-top:2vh;
+	margin-bottom:2vh;
+}
+
+.project .encart .intro{
+	font-size:1.6vw;
+}
+
+.btn-container{
+	text-align: right;
+}
+
+.btn-container a.btn{
+	display:inline-block;
+	padding:10px;
+	padding-top:20px;
+	padding-bottom:20px;
+	color:silver;
+	background-color:rgba(0,0,0,0.85);
+	font-family: 'Open Sans';
+	border-radius:10px;
+	transition:all 0.25s;
+}
+
+.btn-container a.btn:hover{
+	cursor:pointer;
+	background-color:rgba(0,0,0,1);
+	color:white;
+}
+
+.grid{
+	display:grid;
+}
+
+.col-2{
+	grid-template-columns: 1fr 1fr;
+}
+
+.col-3{
+	grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width:600px){
+	#templateGrid1{
+		grid-template-columns: 1fr 1fr;
+		padding:50px;
+		grid-gap:50px;
+	}
+	#templateGrid1 .grid.right{
+		grid-template-rows: 1fr 1fr;
+		grid-gap:50px;
+	}
+}

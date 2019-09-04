@@ -1,0 +1,4 @@
+L'icône "plug" n'existe pas dans ionic
+L'icône "music" n'existe pas dans ionic
+Récapitulatif de la commande ne fonctionne pas
+Comment changer l'icône de notification ? 
