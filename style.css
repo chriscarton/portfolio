@@ -9,16 +9,43 @@ body{
 
 section{
 	min-height:100vh;
-	border:1px solid black;
+}
+
+section:first-child{
+	margin-top:25px;
+}
+
+.section-intro{
+	background-color:#5292DC;
+	padding:50px;
+	color:white;
+}
+
+@media screen and (min-width:600px){
+	.section-intro{
+		width:75%;
+		margin-left:auto;
+		margin-right:0;
+		text-align:right;
+	}
 }
 
 h1,h2{
 	font-family: 'Open Sans';
 }
 
-header{
+header,footer{
 	background-color:#5292DC;
 	color:white;
+	padding:50px;
+}
+footer{
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+}
+header h1,header h2{
+	margin:0px;
 }
 
 #Intro{
@@ -125,6 +152,7 @@ header{
 	cursor:pointer;
 	background-color:rgba(0,0,0,1);
 	color:white;
+	text-decoration: none;
 }
 
 .grid{
@@ -139,12 +167,12 @@ header{
 	grid-template-columns: 1fr 1fr;
 }
 @media screen and (min-width:600px){
-	#templateGrid1{
+	#templateGrid1 .grid{
 		grid-template-columns: 1fr 1fr;
 		padding:50px;
 		grid-gap:50px;
 	}
-	#templateGrid1 .grid.right{
+	#templateGrid1 .grid .right{
 		grid-template-rows: 1fr 1fr;
 		grid-gap:50px;
 	}

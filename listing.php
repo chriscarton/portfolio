@@ -1,28 +1,33 @@
-<section class="grid" id="templateGrid1">
-	<?= project([
-		'title'=>'Esad Valenciennes',
-		'intro'=>"<p>Site réalisé intégralement pour <b>l'École Supérieure d'Art et de Design</b> de <b>Valenciennes</b> (anciennement <i>École Supérieure Nationale des Beaux-Arts de Valenciennes</i>).</p> <p>Site réalisé sur <b>CakePHP 2</b> avec authentification, pages, actualités, et système de modules en pages d'accueil et d'informations.</p>",
-		'background_color'=>'#FFEA6E',
-		'cover'=>'img/projets/auto/esad.png',
-		'url'=>'esadvalenciennes'
-	]); ?>
-	
-	<div class="right grid">
+<section id="templateGrid1">
+	<div class="section-intro">
+		<h1>Projets en tant qu'indépendant (auto-entreprise)</h1>
+	</div>
+	<div class="grid">	
 		<?= project([
-			'title'=>'Stephen Maas',
-			'intro'=>"<p>Site réalisé sur CakePHP 2. Dispose d'un système d'administration et d'une navigation en <i>Ajax</i></p>",
-			'background_color'=>'#71B6DB',
-			'cover'=>'img/projets/auto/stephenmaas.png',
-			'url'=>'stephenmaas'
+			'title'=>'Esad Valenciennes',
+			'intro'=>"<p>Site réalisé intégralement pour <b>l'École Supérieure d'Art et de Design</b> de <b>Valenciennes</b> (anciennement <i>École Supérieure Nationale des Beaux-Arts de Valenciennes</i>).</p> <p>Site réalisé sur <b>CakePHP 2</b> avec authentification, pages, actualités, et système de modules en pages d'accueil et d'informations.</p>",
+			'background_color'=>'#FFEA6E',
+			'cover'=>'img/projets/auto/esad.png',
+			'url'=>'esadvalenciennes'
 		]); ?>
+		
+		<div class="right">
+			<?= project([
+				'title'=>'Stephen Maas',
+				'intro'=>"<p>Site réalisé sur CakePHP 2. Dispose d'un système d'administration et d'une navigation en <i>Ajax</i></p>",
+				'background_color'=>'#71B6DB',
+				'cover'=>'img/projets/auto/stephenmaas.png',
+				'url'=>'stephenmaas'
+			]); ?>
 
-		<?= project([
-			'title'=>'Petr Opelik',
-			'intro'=>"<p>Site portfolio réalisé sur CakePHP 2 avec une <b>navigation originale</b> combinant Javascript (avec les librairie jQuery et Vivus), Ajax et Svg.</p>",
-			'background_color'=>'#75DB71',
-			'cover'=>'img/projets/auto/petropelik.png',
-			'url'=>'petropelik'
-		]); ?>
+			<?= project([
+				'title'=>'Petr Opelik',
+				'intro'=>"<p>Site portfolio réalisé sur CakePHP 2 avec une <b>navigation originale</b> combinant Javascript (avec les librairie jQuery et Vivus), Ajax et Svg.</p>",
+				'background_color'=>'#75DB71',
+				'cover'=>'img/projets/auto/petropelik.png',
+				'url'=>'petropelik'
+			]); ?>
+		</div>
 	</div>
 </section>
 <section class="ban" id="templateGrid2">
