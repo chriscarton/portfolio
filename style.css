@@ -21,7 +21,6 @@ h1,h2{
 }
 
 .project{
-	
 	display:grid;
 	align-content: center;
 	justify-content: end;
@@ -144,4 +143,28 @@ h1,h2{
 		grid-template-rows: 1fr 1fr;
 		grid-gap:50px;
 	}
+	#templateGrid2 .grid{
+				padding:50px;
+
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap:50px; 
+	}
+	#templateGrid2 .grid .subgrid{
+		display:grid;
+		grid-template-rows:1fr 1fr 1fr;
+		grid-gap:50px; 
+	}
+	#templateGrid2 .grid .subgrid div{
+		border:1px dashed black;
+	}
+}
+.info{
+	background-color:#009FFF;
+	font-size: 1.2vw;
+	padding:5px;
+	color:white;
+	display:grid;
+	align-content:center;
+	justify-content: center;
 }

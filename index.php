@@ -1,3 +1,6 @@
+<?php 
+require_once('functions.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,35 +17,6 @@
 		<p>Bon on va se dire c'est une maquette.</p>
 		<p>Qu'est-ce qu'on fait ?</p>
 	</section> -->
-
-	<?php 
-	
-
-
-	function project($project){
-		ob_start();
-		?>
-		<div class="project" style="background-color:<?php echo $project['background_color'] ?? 'white' ?>;">
-			<div class="background-image" style="background-image:url('<?php echo $project['cover'] ?? ''; ?>');">
-				
-			</div>
-			<div class="overlay"></div>
-			<div class="pattern"></div>
-			<div class="encart">
-				<h1><?= $project['title'] ?></h1>
-				<div class="intro">
-					<?= $project['intro'] ?>
-				</div>
-				<div class="btn-container">
-					<a class="btn">Suite <span class="arrow">→</span></a>
-				</div>
-			</div>
-		</div>
-		<?php
-		return ob_get_clean();
-	}
-	?>
-
 	<section class="grid" id="templateGrid1">
 		
 		<?= project([
@@ -78,7 +52,31 @@
 				'cover'=>'img/projets/auto/petropelik.png'
 			]); ?>
 		</div>
-		
+	</section>
+	<section class="ban" id="templateGrid2">
+		<div class="grid">
+			<?php
+			echo project([
+				'title'=>'Place aux Cartons',
+				'intro'=>"<p>Site réalisé intégralement pour <b>l'Association Place aux Cartons</b> à <b>Valenciennes</b>.</p><p>Ce site dispose d'une d'authentification basique et d'un système d'administration maison à la volée grâce à l'attribut <code>contentEditable</code></p><p>Il est couplé à un WordPress pour la partie blog.</p>",
+				'background_color'=>'#996F42',
+				'cover'=>'img/projets/auto/placeauxcartons.png'
+			]); 
+			?>
+			<div class="subgrid">
+				<div class="info">
+					<p>Les deux essais suivants ont conduit à l'élaboration de ce système de site <i>one page</i>.</p>
+				</div>
+				<?php 
+				echo concept([
+					'title'=>'Petit vélo',
+					'url'=>'https://chris-carton.com/concepts/petitvelo',
+					'cover'=>'img/concepts/petitvelo.png'
+				]);
+				?>
+				<div class="concept">project</div>
+			</div>
+		</div>
 	</section>
 </body>
 </html>
