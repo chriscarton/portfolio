@@ -166,6 +166,16 @@ h1,h2{
 		padding:50px;
 		grid-gap:50px;
 	}
+	#templateGrid5 .grid{
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		/*grid-template-rows: 1fr 1fr 1fr;*/
+		padding:50px;
+		grid-gap:50px;
+	}
+	#templateGrid5 .grid .project{
+		border:1px dashed black;
+	}
 	
 }
 .ban{
