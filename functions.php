@@ -32,10 +32,10 @@ function concept($concept){
 		<div class="overlay"></div>
 		<div class="pattern"></div>
 		<div class="encart">
-			<h2><?= $concept['title'] ?? 'Sans titre'; ?><h2>
+			<h2><?= $concept['title'] ?></h2>
 			<div class="link-container">
-				<a href="" target="blank">
-					<?= $concept['url']; ?>
+				<a href="<?= $concept['url']; ?>" target="blank">
+					<?= $text ?? 'Tester la démo' ?>
 				</a>
 			</div>
 		</div>
@@ -44,7 +44,4 @@ function concept($concept){
 	return ob_get_clean();
 
 }
-
-
-
 ?>

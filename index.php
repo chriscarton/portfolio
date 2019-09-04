@@ -73,9 +73,39 @@ require_once('functions.php');
 					'url'=>'https://chris-carton.com/concepts/petitvelo',
 					'cover'=>'img/concepts/petitvelo.png'
 				]);
+				echo concept([
+					'title'=>'Open mind',
+					'url'=>'https://chris-carton.com/concepts/openmind',
+					'cover'=>'img/concepts/openmind.png'
+				]);
 				?>
-				<div class="concept">project</div>
 			</div>
+		</div>
+	</section>
+	<section class="ban" id="templateGrid3">
+		<div class="grid">
+			<?php
+			echo project([
+				'title'=>'Emmanuel Prin',
+				'intro'=>"<p>Porfolio administrable réalisé pour un ami à la sortie des Beaux-Arts. Ce site n'est plus en ligne.</p>",
+				'background_color'=>'#996F42',
+				'cover'=>'img/projets/auto/emmanuelprin.png'
+			]);
+
+			echo project([
+				'title'=>'Assurances Lewis',
+				'intro'=>"<p>Maquette pour une société d'assurance.</p>",
+				'background_color'=>'#996F42',
+				'cover'=>'img/projets/auto/emmanuelprin.png'
+			]); 
+
+			echo project([
+				'title'=>'ABC Natation',
+				'intro'=>"<p>Maquette pour une association.</p>",
+				'background_color'=>'#996F42',
+				'cover'=>'img/projets/auto/emmanuelprin.png'
+			]); 
+			?>
 		</div>
 	</section>
 </body>

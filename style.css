@@ -34,7 +34,7 @@ h1,h2{
 	border:1px solid silver;
 }
 
-.project .overlay{
+.overlay{
 	position:absolute;
 	left:0px;
 	right:0px;
@@ -144,8 +144,7 @@ h1,h2{
 		grid-gap:50px;
 	}
 	#templateGrid2 .grid{
-				padding:50px;
-
+		padding:50px;
 		display: grid;
 		grid-template-columns: 3fr 1fr;
 		grid-gap:50px; 
@@ -153,18 +152,65 @@ h1,h2{
 	#templateGrid2 .grid .subgrid{
 		display:grid;
 		grid-template-rows:1fr 1fr 1fr;
-		grid-gap:50px; 
+		grid-gap:10px; 
 	}
-	#templateGrid2 .grid .subgrid div{
-		border:1px dashed black;
+	#templateGrid3 .grid{
+		display:grid;
+		grid-template-columns:2fr 1fr 1fr;
+		grid-gap:10px; 
 	}
+	
+}
+.ban{
+	min-height: 50vh;
 }
 .info{
 	background-color:#009FFF;
 	font-size: 1.2vw;
-	padding:5px;
+	padding:15px;
 	color:white;
 	display:grid;
 	align-content:center;
 	justify-content: center;
+}
+
+.concept{
+	position:relative;
+	border:1px dashed black;
+	display:grid;
+	align-content:center;
+	justify-content: center;
+}
+.concept a{
+	position:relative;
+	color:black;
+	
+}
+.concept .background-image{
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	background-size: cover;
+	background-position:center center;
+}
+.concept h2{
+	margin:5px;
+}
+.concept .encart{
+	position:relative;
+	z-index:3;
+}
+.concept .link-container{
+	text-align:center;
+}
+
+.concept .link-container a{
+	display:inline-block;
+	color:white;
+	background-color:#272727;
+	padding:3px;
+	text-decoration: none;
+	font-style: italic;
 }
