@@ -13,9 +13,11 @@ function project($project){
 			<div class="intro">
 				<?= $project['intro'] ?>
 			</div>
-			<div class="btn-container">
-				<a class="btn">Suite <span class="arrow">→</span></a>
-			</div>
+			<?php if(!empty($project['url'])): ?>
+				<div class="btn-container">
+					<a href="?p=<?= $project['url'] ?>" class="btn">Suite <span class="arrow">→</span></a>
+				</div>
+			<?php endif; ?>
 		</div>
 	</div>
 	<?php
