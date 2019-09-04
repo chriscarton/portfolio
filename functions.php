@@ -19,6 +19,7 @@ function project($project){
 		</div>
 	</div>
 	<?php
+	$project = null;
 	return ob_get_clean();
 }
 

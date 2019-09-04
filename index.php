@@ -76,17 +76,20 @@ require_once('header.php');
 			echo project([
 				'title'=>'Emmanuel Prin',
 				'intro'=>"<p>Porfolio administrable réalisé pour un ami à la sortie des Beaux-Arts. Ce site n'est plus en ligne.</p>",
-				'background_color'=>'#996F42',
+				'background_color'=>'#F4A700',
 				'cover'=>'img/projets/auto/emmanuelprin.png'
 			]);
 
 			echo project([
 				'title'=>'Assurances Lewis',
 				'intro'=>"<p>Maquette pour une société d'assurance.</p>",
-				'background_color'=>'#996F42',
-				'cover'=>'img/projets/auto/emmanuelprin.png'
+				'background_color'=>'#7EC64E',
+				'cover'=>'img/projets/auto/assurances_lewis.png'
 			]); 
 
+			//Screenshooter sur...
+			//http://localhost/abcnatation/
+			//Mais il y a des bugs alors bon...
 			echo project([
 				'title'=>'ABC Natation',
 				'intro'=>"<p>Maquette pour une association.</p>",
@@ -94,6 +97,42 @@ require_once('header.php');
 				'cover'=>'img/projets/auto/emmanuelprin.png'
 			]); 
 			?>
+		</div>
+	</section>
+	<!-- Je suis en train d'oublier margot -->
+	<!-- Fuckin' hell -->
+	<section id="templateGrid4">
+		<div class="grid">
+			<?php 
+			echo project([
+				'title'=>'Margot',
+				'intro'=>"<p>Ici on va faire du blabla.</p>",
+				'background_color'=>'#58ABE0',
+				'cover'=>'img/projets/auto/margot.png'
+			]); 
+					
+			echo project([
+				'title'=>'Mon propre site internet !',
+				'intro'=>"<p>Parce qu'on est jamais aussi bien servi que par soi-même.</p>",
+				'background_color'=>'#58ABE0',
+				'cover'=>'img/projets/auto/chriscarton.png'
+			]); 
+			?>
+		</div>
+	</section>
+	<section class="ban" id="templateGrid5">
+		<div class="section-intro">
+			<h1>Projets en agence (Les Sentinelles du Web)</h1>
+			<p>Un peu de blabla</p>
+		</div>
+		<div class="grid">
+			
+			<div class="project">
+				Quel projet ?
+			</div>
+			<div class="project">
+				Quel projet ?
+			</div>
 		</div>
 	</section>
 <?php require_once('footer.php'); ?>
