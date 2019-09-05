@@ -1,0 +1,8 @@
+Déjà, les blocs bleu header section-intro footer, je suis pas fan
+Ensuite la taille du texte doit être revue sur des bases plus "classiques"
+On fait une navigation ajax en JavaScript cette fois et non plus en jQuery
+Il faut un fichier view.php si le fichier n'est pas trouvé dans projects
+Il faut renommer sur github php
+Il faut aller au bout des choses 
+Les couleurs ça va pas non plus il faudrait une carte plus cohérente
+
