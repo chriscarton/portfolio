@@ -9,7 +9,17 @@ function project($project){
 		<div class="overlay"></div>
 		<div class="pattern"></div>
 		<div class="encart">
-			<h1><?= $project['title'] ?></h1>
+			<h1>
+				<?php if(!empty($project['website'])):?>
+					<small>
+						<a href="<?= $project['website'] ?>" target="blank">
+							<?= $project['website'] ?>
+						</a>
+					</small>
+					<br>
+				<?php endif; ?>
+				<?= $project['title'] ?>
+			</h1>
 			<div class="intro">
 				<?= $project['intro'] ?>
 			</div>

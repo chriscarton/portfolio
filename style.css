@@ -54,6 +54,7 @@ section{
 	display:grid;
 	min-height: 35vh;
 	align-content: center;
+	text-align:right;
 }
 .section-intro h1{
 	margin:0px;
@@ -148,6 +149,12 @@ h1,h2{
 
 }
 
+.project .encart h1 small a{
+	font-family: 'Lora';
+	color:#272727;
+	font-style: italic;
+	font-size: 1rem;
+}
 
 .project .encart h1{
 	font-size:2.2rem;
@@ -192,6 +199,7 @@ h1,h2{
 .col-3{
 	grid-template-columns: 1fr 1fr;
 }
+
 @media screen and (min-width:600px){
 	#templateGrid1 .grid{
 		grid-template-columns: 1fr 1fr;
@@ -229,35 +237,36 @@ h1,h2{
 	}
 	#templateGrid5 .grid{
 		display:grid;
-		grid-template-columns:1fr 1fr 1fr 1fr;
+		grid-template-columns:1fr 1fr;
 		padding-left:50px;
 		padding-right:50px;
 		grid-gap:50px;
 	}
-	#templateGrid5 .grid .project{
-		border:1px dashed black;
-	}
 	
 }
+@media screen and (min-width:1200px){
+	#templateGrid5 .grid{
+		grid-template-columns:repeat(4,1fr);
+	}
+}
 .ban{
-	/*min-height: 50vh;*/
 	min-height: auto;
 	padding-top:0px;
 	padding-bottom:0px;
 }
 .info{
 	background-color:#009FFF;
-	font-size: 1.2vw;
 	padding:15px;
 	color:white;
 	display:grid;
 	align-content:center;
 	justify-content: center;
+	font-size:1.2rem;
 }
 
 .concept{
 	position:relative;
-	border:1px dashed black;
+	min-height: 150px;
 	display:grid;
 	align-content:center;
 	justify-content: center;
@@ -265,7 +274,6 @@ h1,h2{
 .concept a{
 	position:relative;
 	color:black;
-	
 }
 .concept .background-image{
 	position:absolute;
