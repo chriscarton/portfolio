@@ -2,7 +2,7 @@
 $projects = [
 	'esadvalenciennes'=>[
 		'title'=>'Esad Valenciennes',
-		'intro'=>"<p>Site réalisé intégralement pour <b>l'École Supérieure d'Art et de Design</b> de <b>Valenciennes</b> (anciennement <i>École Supérieure Nationale des Beaux-Arts de Valenciennes</i>).</p> <p>Site réalisé sur <b>CakePHP 2</b> avec authentification, pages, actualités, et système de modules en pages d'accueil et d'informations.</p>",
+		'intro'=>"<p>Site réalisé intégralement (<i>design graphique, création du logo, développement, mise en production, formation à l'administration</i>) pour <b>l'École Supérieure d'Art et de Design</b> de <b>Valenciennes</b> (anciennement <i>École Supérieure Nationale des Beaux-Arts de Valenciennes</i>).</p> <p>Site réalisé sur <b>CakePHP 2</b> avec authentification, pages, actualités, et système de modules en pages d'accueil et d'informations.</p>",
 		'background_color'=>'#FFEA6E',
 		'cover'=>'img/projets/auto/esad.png',
 		'url'=>'esadvalenciennes',

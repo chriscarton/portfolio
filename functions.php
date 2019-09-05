@@ -68,4 +68,26 @@ function debug($var){
 	<?php
 	return ob_get_clean();
 }
+
+function projectCard($src,$text){
+	ob_start();
+	?>
+	<div class="project-card">
+		<div class="project-img-container">
+			<img src="<?= $src ?>">
+		</div>
+		<?php if(!empty($text)): ?>
+		<div class="project-desc">
+			<div class="icon">
+				&uarr; 
+			</div>
+			<div class="project-text">
+				<?= $text ?> 
+			</div>
+		</div>
+		<?php endif; ?>
+	</div>
+	<?php
+	return ob_get_clean();
+}
 ?>
