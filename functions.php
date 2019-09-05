@@ -45,6 +45,17 @@ function concept($concept){
 	</div>
 	<?php
 	return ob_get_clean();
+}
 
+function debug($var){
+	ob_start();
+	?>
+	<pre>
+		<code>
+<?php var_dump($var); ?>
+		</code>
+	</pre>
+	<?php
+	return ob_get_clean();
 }
 ?>
