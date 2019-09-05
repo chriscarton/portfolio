@@ -14,6 +14,5 @@ require_once('header.php');
 	</div>
 	<footer>
 		Chris Carton <?php echo date('Y'); ?>
-	</footer>
-	
+	</footer>	
 <?php require_once('footer.php'); ?>
