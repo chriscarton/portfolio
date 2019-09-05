@@ -7,18 +7,56 @@ body{
 	box-sizing:border-box;
 }
 
-section{
-	min-height:100vh;
+header,footer{
+	background-color:white;
+	color:#272727;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+header .inblock{
+	margin-top:50px;
+	display:inline-block;
+	border-bottom:5px solid #272727;
+}
+header a{
+	text-decoration: none;
+	color:inherit;
 }
 
-section:first-child{
-	margin-top:25px;
+header h1,header h2{
+	margin:0px;
+}
+
+footer{
+	margin-top:calc(35vh/2);
+	background-color:#272727;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	color:white;
+}
+
+
+#firstPart{
+	border-bottom: 5px dashed #272727;
+	padding-bottom: calc(35vh/2);
+}
+
+section{
+	min-height:100vh;
+	display:grid;
+	align-content: center;
 }
 
 .section-intro{
-	background-color:#5292DC;
-	padding:50px;
-	color:white;
+	color:#272727;
+	padding-right:50px;
+	display:grid;
+	min-height: 35vh;
+	align-content: center;
+}
+.section-intro h1{
+	margin:0px;
 }
 
 @media screen and (min-width:600px){
@@ -34,23 +72,7 @@ h1,h2{
 	font-family: 'Open Sans';
 }
 
-header,footer{
-	background-color:#5292DC;
-	color:white;
-	padding:50px;
-}
-footer{
-	padding-top:10px;
-	padding-bottom:10px;
-	text-align:center;
-}
-header h1,header h2{
-	margin:0px;
-}
 
-#Intro{
-
-}
 
 .project{
 	display:grid;
@@ -60,6 +82,10 @@ header h1,header h2{
 	overflow:hidden;
 	border:1px solid transparent;
 	transition:all 2s;
+}
+
+#secondPart .project{
+	justify-content: center;
 }
 
 .project:hover{
@@ -124,13 +150,11 @@ header h1,header h2{
 
 
 .project .encart h1{
-	font-size:3vw;
-	margin-top:2vh;
-	margin-bottom:2vh;
+	font-size:2.2rem;
 }
 
 .project .encart .intro{
-	font-size:1.6vw;
+	font-size:1.2rem;
 }
 
 .btn-container{
@@ -147,6 +171,7 @@ header h1,header h2{
 	font-family: 'Open Sans';
 	border-radius:10px;
 	transition:all 0.25s;
+	text-decoration: none;
 }
 
 .btn-container a.btn:hover{
@@ -170,7 +195,8 @@ header h1,header h2{
 @media screen and (min-width:600px){
 	#templateGrid1 .grid{
 		grid-template-columns: 1fr 1fr;
-		padding:50px;
+		padding-left:50px;
+		padding-right:50px;
 		grid-gap:50px;
 	}
 	#templateGrid1 .grid .right{
@@ -191,7 +217,8 @@ header h1,header h2{
 	#templateGrid3 .grid{
 		display:grid;
 		grid-template-columns:2fr 1fr 1fr;
-		padding:50px;
+		padding-left:50px;
+		padding-right:50px;
 		grid-gap:50px;
 	}
 	#templateGrid4 .grid{
@@ -203,8 +230,8 @@ header h1,header h2{
 	#templateGrid5 .grid{
 		display:grid;
 		grid-template-columns:1fr 1fr 1fr 1fr;
-		/*grid-template-rows: 1fr 1fr 1fr;*/
-		padding:50px;
+		padding-left:50px;
+		padding-right:50px;
 		grid-gap:50px;
 	}
 	#templateGrid5 .grid .project{
@@ -213,7 +240,10 @@ header h1,header h2{
 	
 }
 .ban{
-	min-height: 50vh;
+	/*min-height: 50vh;*/
+	min-height: auto;
+	padding-top:0px;
+	padding-bottom:0px;
 }
 .info{
 	background-color:#009FFF;
