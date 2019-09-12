@@ -69,7 +69,23 @@ function debug($var){
 	return ob_get_clean();
 }
 
-function projectCard($src,$text){
+function projectCard($src,$text,$arrow="top"){
+
+	switch($arrow){
+		case 'top':
+			$arrow = '&uarr;'; 
+		break;
+		case 'bottom':
+			$arrow = '&darr;'; 
+		break;
+		case 'left':
+			$arrow = '&larr;';
+		break;
+		case 'right':
+			$arrow = '&rarr;';
+		break;
+	}
+
 	ob_start();
 	?>
 	<div class="project-card">
@@ -79,7 +95,7 @@ function projectCard($src,$text){
 		<?php if(!empty($text)): ?>
 		<div class="project-desc">
 			<div class="icon">
-				&uarr; 
+				<?= $arrow ?>
 			</div>
 			<div class="project-text">
 				<?= $text ?> 

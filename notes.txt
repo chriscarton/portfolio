@@ -1,7 +1,49 @@
-Déjà, les blocs bleu header section-intro footer, je suis pas fan
-Ensuite la taille du texte doit être revue sur des bases plus "classiques"
-Il faut un fichier view.php si le fichier n'est pas trouvé dans projects
-Il faut renommer sur github php
-Il faut aller au bout des choses 
-Les couleurs ça va pas non plus il faudrait une carte plus cohérente
+Bon alors on va reprendre 
+/* Pour tous mes projets en auto-entrepreneur */
+	
+	ESAD
+		Accueil et info
+		La page présentations
+		Les documents
+		Le logo
+		La version mobile
 
+	STEPHEN MAAS
+		La page d'accueil
+		La page Works
+		La page contact
+
+	PETR OPELIK
+		LA PAGE D'ACCUEIL
+		LES CATÉGORIES
+		DESSIN MAQUETTES
+		(parler de vivus aussi)
+		Parler de l'aléatoire
+
+	PLACE AUX CARTONS
+		Site "one page" avec plusieurs sections couplé à un blog WordPress
+		PAGE D'ACCUEIL
+		PAGE ACTIONS
+		PAGE CONTACT
+		BLOG
+
+	ASSURANCES LEWIS 
+		FAIRE SOUS FORME DE FIL
+
+	ABC NATATION 
+		FAIRE SOUS FORME DE FIL
+
+	MARGOT 
+		GROS DOSSIER (FAIRE APRÈS)
+
+	Mon propre site internet
+
+	COMMENT ON S'ORGANISE ?
+	DÉJÀ, ON VA PRENDRE DES SCRENSHOOT
+	PARLER DES VERSIONS MOBILES
+	ON VA LES FAIRE DANS L'ORDRE
+
+	ET POUR LES TRUCS LES MOINS SIGNIFICATIFS FAIRE UNE AUTRE PRÉSENTATION
+	EN FIL 
+
+/* Pour mes projets en agence */
