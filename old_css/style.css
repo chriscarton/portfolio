@@ -1,0 +1,303 @@
+body{
+	margin:0;
+	background-color:white;
+	font-family: 'Lora';
+}
+*{
+	box-sizing:border-box;
+}
+
+header,footer{
+	background-color:white;
+	color:#272727;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+header .inblock{
+	margin-top:50px;
+	display:inline-block;
+	border-bottom:5px solid #272727;
+}
+header a{
+	text-decoration: none;
+	color:inherit;
+}
+
+header h1,header h2{
+	margin:0px;
+}
+
+footer{
+	margin-top:calc(35vh/2);
+	background-color:#272727;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	color:white;
+}
+
+
+#firstPart{
+	border-bottom: 5px dashed #272727;
+	padding-bottom: calc(35vh/2);
+}
+
+section{
+	min-height:100vh;
+	display:grid;
+	align-content: center;
+}
+
+.section-intro{
+	color:#272727;
+	padding-right:50px;
+	display:grid;
+	min-height: 35vh;
+	align-content: center;
+	text-align:right;
+}
+.section-intro h1{
+	margin:0px;
+}
+
+@media screen and (min-width:600px){
+	.section-intro{
+		width:75%;
+		margin-left:auto;
+		margin-right:0;
+		text-align:right;
+	}
+}
+
+h1,h2{
+	font-family: 'Open Sans';
+}
+
+
+
+.project{
+	display:grid;
+	align-content: center;
+	justify-content: end;
+	position:relative;
+	overflow:hidden;
+	border:1px solid transparent;
+	transition:all 2s;
+}
+
+#secondPart .project{
+	justify-content: center;
+}
+
+.project:hover{
+	border:1px solid silver;
+}
+
+.overlay{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	background-color:rgba(255,255,255,0.25);
+}
+
+.project .pattern{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	background-image:url('https://subtlepatterns.toptal.io/designers/subtlepatterns/wp-content/themes/tweaker7/images/transp_bg.png');
+	transform:rotate(-15deg) scale(2);
+	mix-blend-mode: multiply;
+}
+
+.project .background-image{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	background-color:rgba(0,0,0,0.25);
+	background-size:cover;
+	background-position:center center;
+	
+	transform:rotate(-15deg);
+	transition:all 0.25s;
+}
+.project:hover .background-image{
+	transform:rotate(-10deg) scale(1.25);
+
+}
+
+.project .encart{
+	transition:all 0.25s;
+	position:relative;
+	z-index: 1;
+	background-color:white;
+	opacity:0.85;
+	padding:25px;
+	margin:25px;
+	box-shadow:2px 2px 5px 0px rgba(0,0,0,0.25);
+}
+
+.project .encart:hover{
+	opacity:1;
+	box-shadow:3px 3px 10px 0px rgba(0,0,0,0.50);
+}
+
+.project .encart h1 small a{
+	font-family: 'Lora';
+	color:#272727;
+	font-style: italic;
+	font-size: 1rem;
+}
+
+.project .encart h1{
+	font-size:2.2rem;
+}
+
+.project .encart .intro{
+	font-size:1.2rem;
+}
+
+.btn-container{
+	text-align: right;
+}
+
+.btn-container a.btn{
+	display:inline-block;
+	padding:10px;
+	padding-top:20px;
+	padding-bottom:20px;
+	color:silver;
+	background-color:rgba(0,0,0,0.85);
+	font-family: 'Open Sans';
+	border-radius:10px;
+	transition:all 0.25s;
+	text-decoration: none;
+}
+
+.btn-container a.btn:hover{
+	cursor:pointer;
+	background-color:rgba(0,0,0,1);
+	color:white;
+	text-decoration: none;
+}
+
+.grid{
+	display:grid;
+}
+
+.col-2{
+	grid-template-columns: 1fr 1fr;
+}
+
+.col-3{
+	grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width:600px){
+	#templateGrid1 .grid{
+		grid-template-columns: 1fr 1fr;
+		padding-left:50px;
+		padding-right:50px;
+		grid-gap:50px;
+	}
+	#templateGrid1 .grid .right{
+		grid-template-rows: 1fr 1fr;
+		grid-gap:50px;
+	}
+	#templateGrid2 .grid{
+		padding:50px;
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap:50px; 
+	}
+	#templateGrid2 .grid .subgrid{
+		display:grid;
+		grid-template-rows:1fr 1fr 1fr;
+		grid-gap:10px; 
+	}
+	#templateGrid3 .grid{
+		display:grid;
+		grid-template-columns:2fr 1fr 1fr;
+		padding-left:50px;
+		padding-right:50px;
+		grid-gap:50px;
+	}
+	#templateGrid4 .grid{
+		display:grid;
+		grid-template-columns:3fr 1fr;
+		padding:50px;
+		grid-gap:50px;
+	}
+	#templateGrid5 .grid{
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		padding-left:50px;
+		padding-right:50px;
+		grid-gap:50px;
+	}
+	
+}
+@media screen and (min-width:1200px){
+	#templateGrid5 .grid{
+		grid-template-columns:repeat(4,1fr);
+	}
+}
+.ban{
+	min-height: auto;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.info{
+	background-color:#009FFF;
+	padding:15px;
+	color:white;
+	display:grid;
+	align-content:center;
+	justify-content: center;
+	font-size:1.2rem;
+}
+
+.concept{
+	position:relative;
+	min-height: 150px;
+	display:grid;
+	align-content:center;
+	justify-content: center;
+}
+.concept a{
+	position:relative;
+	color:black;
+}
+.concept .background-image{
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	background-size: cover;
+	background-position:center center;
+}
+.concept h2{
+	margin:5px;
+}
+.concept .encart{
+	position:relative;
+	z-index:3;
+}
+.concept .link-container{
+	text-align:center;
+}
+
+.concept .link-container a{
+	display:inline-block;
+	color:white;
+	background-color:#272727;
+	padding:3px;
+	text-decoration: none;
+	font-style: italic;
+}

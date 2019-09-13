@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Chris Carton - Designer et développeur web",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriscarton/portfolio.git"
+  },
+  "author": "Chris Carton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chriscarton/portfolio/issues"
+  },
+  "homepage": "https://github.com/chriscarton/portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}

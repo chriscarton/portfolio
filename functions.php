@@ -1,6 +1,41 @@
 <?php 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+
+function projectBis($project){
+	ob_start();
+	?>
+	<div class="project" style="background-color:<?php echo $project['background_color'] ?? 'white' ?>;">
+
+		<div class="inner">
+			<?php if(!empty($project['website'])):?>
+				<a href="<?= $project['website'] ?>" target="blank">
+					<?= $project['website'] ?>
+				</a>
+			<?php endif; ?>
+			<h1>
+				<?= $project['title'] ?>
+			</h1>
+			<?php if(!empty($project['cover'])): ?>
+			<div class="img-container">
+				<img src="<?= $project['cover'] ?>" alt="">
+			</div>
+			<?php endif; ?>
+			<div class="intro">
+				<?= $project['intro'] ?>
+			</div>
+			<?php if(!empty($project['url'])): ?>
+				<div class="btn-container">
+					<a href="?p=<?= $project['url'] ?>" class="btn">Suite <span class="arrow">→</span></a>
+				</div>
+			<?php endif; ?>
+		</div>
+	</div>
+	<?php
+	return ob_get_clean();
+}
+
+
 function project($project){
 	ob_start();
 	?>
