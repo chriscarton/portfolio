@@ -99,7 +99,7 @@ $projects = [
 		'title'=>'Femmes de Bretagne',
 		'intro'=>"<p>Intégration d'éléments graphiques sur l'application sous le framework Ionic.</p>",
 		'background_color'=>$blue,
-		'cover'=>'img/projets/sdw/femmes_de_bretagne.png',
+		'cover'=>'img/projets/sdw/femmesdebretagne.png',
 		'url'=>'femmesdebretagne',
 		'website'=>'http://www.femmesdebretagne.fr'
 	],
@@ -115,7 +115,7 @@ $projects = [
 		'title'=>'Blog Colony',
 		'intro'=>"<p>Création d'un blog WordPress annexe au site marchand et participation au développement du thème.</p>",
 		'background_color'=>$blue,
-		'cover'=>'img/projets/sdw/blogcolony.png',
+		'cover'=>'img/projets/sdw/colony.png',
 		'url'=>'blogcolony',
 		'website'=>'https://www.colony-perroquet.fr/blog'
 	],

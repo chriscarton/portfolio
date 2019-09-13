@@ -1,18 +1,18 @@
 <div id="firstPart">
-	<section id="templateGrid1">
+	<section class="row-1">
 		<div class="intro">
-			<h1>Projets en tant qu'indépendant (auto-entreprise)</h1>
+			<h1>Projets en tant qu'indépendant</h1>
 		</div>
 		<div class="grid">	
 			<?= projectBis($projects['esadvalenciennes']); ?>
 			
-			<div class="right">
+			<div class="subgrid">
 				<?= projectBis($projects['stephenmaas']); ?>
 				<?= projectBis($projects['petropelik']); ?>
 			</div>
 		</div>
 	</section>
-	<section class="ban" id="templateGrid2">
+	<section class="row-2">
 		<div class="grid">
 			<?php
 			echo projectBis($projects['placeauxcartons']); 
@@ -36,7 +36,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="ban" id="templateGrid3">
+	<section class="row-3">
 		<div class="grid">
 			<?php
 			echo projectBis($projects['emmanuelprin']);
@@ -45,7 +45,7 @@
 			?>
 		</div>
 	</section>
-	<section class="ban" id="templateGrid4">
+	<section class="row-4">
 		<div class="grid">
 			<?php 
 			echo projectBis($projects['margot']); 
@@ -55,9 +55,9 @@
 	</section>
 </div>
 <div id="secondPart">
-	<section id="templateGrid5">
-		<div class="section-intro">
-			<h1>Projets en agence (Les Sentinelles du Web)</h1>
+	<section class="row-5">
+		<div class="intro">
+			<h1>Projets en agence <small>(Les Sentinelles du Web)</small></h1>
 		</div>
 		<div class="grid">
 			<?php 
