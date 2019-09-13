@@ -29,6 +29,9 @@
 	margin-top:50px;
 }
 
+.project-container .project-card{
+	margin-bottom: 50px;
+}
 
 .project-template{
 	display:grid;
@@ -72,10 +75,33 @@
 	padding:15px;
 	color:white;
 	background-color:#272727;
+	width:100%;
 }
 .icon{
 	font-size:150%;
 	padding:20px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.project-info{
+	padding:5px;
+	color:#272727;
+	border:2px solid #272727;
+	background-color:white;
+	display:flex;
+}
+.project-info .icon{
+	font-size:100%;
+	padding:15px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.project-info .text{
+	padding:15px;
 	display:flex;
 	align-items: center;
 	justify-content: center;

@@ -1,4 +1,6 @@
 <?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 function project($project){
 	ob_start();
 	?>
@@ -69,7 +71,7 @@ function debug($var){
 	return ob_get_clean();
 }
 
-function projectCard($src,$text,$arrow="top"){
+function projectCard($src,$text=null,$arrow="top"){
 
 	switch($arrow){
 		case 'top':
@@ -102,6 +104,38 @@ function projectCard($src,$text,$arrow="top"){
 			</div>
 		</div>
 		<?php endif; ?>
+	</div>
+	<?php
+	return ob_get_clean();
+}
+
+function projectInfo($text,$settings,$direction=null){
+	ob_start();
+	?>
+	<div 
+		class="project-info"
+		style="
+			grid-column-start:1;
+			grid-column-end:4; 
+			"
+		>
+		<div class="icon">
+			<?php
+			if(!empty($direction)):
+				if($direction=="up"){
+					$arrow = '&uarr;'; 
+				}else{
+					$arrow ='&darr;';
+				}
+			else:
+				$arrow = '&uarr;'; 
+			endif;
+			echo $arrow; 
+			?>
+		</div>
+		<div class="text">
+		<?= $text ?>
+		</div>
 	</div>
 	<?php
 	return ob_get_clean();

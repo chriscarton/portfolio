@@ -9,6 +9,10 @@
 	echo projectCard(
 		"img/projets/auto/assurances-lewis/accueil-3.png"
 	);
+
+	echo projectInfo(
+		"Sur la page d'accueil se trouvait un slider qui montrait plusieurs présentations différentes."
+	);
 	?>
 </div>
 
@@ -19,8 +23,6 @@
 		"La maquette présentait aussi l'interface d'administration. Celle-ci était directement intégrée côté front et offrait la possibilité d'ajouter et d'éditer plus \"directement\""
 	);
 	?>
-
-	
 </div>
 
 <div class="project-template cols-2">
@@ -38,4 +40,11 @@
 		"img/projets/auto/assurances-lewis/page-produit-index.png"
 	);
 ?>
+</div>
+<div style="margin-top:50px;">
+	<?php
+	echo projectInfo(
+		"La maquette a été codée (html, css, un petit peu de php pour présenter les différentes pages) presque directement pour être présentable au client."
+	);
+	?>
 </div>
