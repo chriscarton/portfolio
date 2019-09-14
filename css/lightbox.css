@@ -7,10 +7,11 @@
   bottom: 0px;
   z-index: 1000;
   display: none;
-  overflow: hidden;
   transition: all 1s;
-  height: 100vh;
-  padding: 50px; }
+  height: 100vh; }
+  @media screen and (min-width: 600px) {
+    #Lightbox {
+      padding: 50px; } }
   #Lightbox.opened {
     display: flex;
     align-items: center;
@@ -59,7 +60,7 @@
     position: relative;
     min-height: 100vh;
     display: grid;
-    align-content: center;
+    align-items: center;
     justify-content: center; }
     #Lightbox .container img {
       display: block;

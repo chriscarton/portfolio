@@ -71,7 +71,7 @@ $projects = [
 	],
 	'chriscarton'=>[
 		'title'=>'Mon propre site internet !',
-		'intro'=>"<p>J'ai refais mon site plusieurs fois ! Il a d'abord été un site vitrine, puis un système PHP maison, ensuite un CakePHP 2, puis React/API couplé à une api CakePHP 3. Je travaille actuellement sur un blog.</p>",
+		'intro'=>"<p>J'ai refais mon site plusieurs fois ! Il a d'abord été un site vitrine, puis un système PHP maison, ensuite un CakePHP 2, puis React couplé à une api CakePHP 3. Je travaille actuellement sur un blog.</p>",
 		'background_color'=>$blue,
 		'cover'=>'img/projets/auto/chriscarton.png',
 		'url'=>'chriscarton',
@@ -145,7 +145,7 @@ $projects = [
 	],
 	'bzh'=>[
 		'title'=>'BZH Boutique',
-		'intro'=>"<p>Intégration <b>uniquement</b> sous le CMS Prestashop.</p>",
+		'intro'=>"<p>Intégration d'un nouveau thème responsive sous le CMS Prestashop pour ce site de e-commerce.</p>",
 		'background_color'=>$blue,
 		'cover'=>'img/projets/sdw/bzh.png',
 		'url'=>'bzh',

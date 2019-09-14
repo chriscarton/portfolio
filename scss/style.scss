@@ -131,18 +131,21 @@ section{
 	text-align: center;
 	padding:50px;
 	color:white;
-	&:nth-child(odd){
-		border-top:5px dashed white;
-		@media screen and (min-width: $sd){
-			border-top:0px;
-		}
-	}
+	position:relative;
+	background-size:cover;
+	background-position:center center;
+	border:5px solid $blue;
+	
+
 	a{
 		margin-top: 5px;
 		display:inline-block;
 		border:1px solid white;
 		font-style: italic;
 		padding:5px;
+		&:hover{
+			background-color:$blue;
+		}
 	}
 }
 

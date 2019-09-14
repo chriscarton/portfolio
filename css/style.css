@@ -96,18 +96,19 @@ section {
   justify-content: center;
   text-align: center;
   padding: 50px;
-  color: white; }
-  .concept:nth-child(odd) {
-    border-top: 5px dashed white; }
-    @media screen and (min-width: 600px) {
-      .concept:nth-child(odd) {
-        border-top: 0px; } }
+  color: white;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  border: 5px solid #5DB3E0; }
   .concept a {
     margin-top: 5px;
     display: inline-block;
     border: 1px solid white;
     font-style: italic;
     padding: 5px; }
+    .concept a:hover {
+      background-color: #5DB3E0; }
 
 .btn-container {
   text-align: right; }

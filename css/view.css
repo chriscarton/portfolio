@@ -1,10 +1,5 @@
 #View .header {
   background-color: #EFEFEF;
-  /*
-		width:75%;
-		margin-left:auto;
-		margin-right:0;
-		*/
   margin-bottom: 25px;
   padding: 5px; }
   #View .header h1 {
@@ -17,28 +12,12 @@
 #View .content {
   margin-top: 50px; }
 
-#View .container {
-  /*
-		width:80%;
-		margin-left:auto;
-		margin-right:auto;
-		*/ }
-
 #View .grid {
   display: grid;
-  /*
-		grid-gap:50px;
-		grid-template-columns: 1fr 1fr;
-		align-items:center;
-		*/
   padding: 10px; }
 
 #View .card {
   padding: 10px;
-  /*
-		margin-top: 50px;
-		margin-bottom: 50px;
-		*/
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
   transition: all 0.5s ease-out; }
   #View .card:hover {
@@ -69,6 +48,7 @@
       align-items: center; }
 
 #View .info {
+  margin: 10px;
   padding: 5px;
   color: #272727;
   border: 2px solid #272727;
@@ -81,10 +61,7 @@
     align-items: center;
     justify-content: center; }
   #View .info .text {
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    padding: 5px; }
 
 @media screen and (min-width: 500px) {
   #View .grid {
@@ -96,6 +73,8 @@
       grid-template-columns: 1fr 1fr 1fr; }
     #View .grid.cols-4 {
       grid-template-columns: 1fr 1fr 1fr 1fr; }
+    #View .grid.for-3-1 {
+      grid-template-columns: 3fr 1fr; }
   #View .card {
     padding: 0px; } }
 
@@ -108,7 +87,9 @@
       margin-top: 0px; }
   #View .grid {
     padding: 50px;
-    grid-gap: 50px; } }
+    grid-gap: 50px; }
+  #View .info {
+    margin: 50px; } }
 
 @media screen and (min-width: 1300px) {
   #View > .content {

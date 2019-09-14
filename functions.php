@@ -39,9 +39,8 @@ function project($project){
 function concept($concept){
 	ob_start();
 	?>
-	<div class="concept">
-		<div class="bg" style="background-image:url('<?php echo $concept['cover'] ?? ''; ?>');">
-		</div>
+	<div class="concept" style="background-image:url('<?php echo $concept['cover'] ?? ''; ?>');">
+		
 		<div class="encart">
 			<h2><?= $concept['title'] ?></h2>
 			<div class="link-container">
@@ -98,7 +97,9 @@ function card($src,$text=null,$arrow="top"){
 				<?= $arrow ?>
 			</div>
 			<div class="text">
-				<?= $text ?> 
+				<div>	
+					<?= $text ?> 
+				</div>
 			</div>
 		</div>
 		<?php endif; ?>
@@ -107,17 +108,11 @@ function card($src,$text=null,$arrow="top"){
 	return ob_get_clean();
 }
 
-function info($text,$settings=null,$direction=null){
+function info($text,$direction=null){
 	ob_start();
 	?>
 	<div 
-		class="project-info"
-		<?php if(!empty($settings)):?>
-		style="
-			grid-column-start:<?= $settings['start'] ?? 1 ?>;
-			grid-column-end:<?= $settings['end'] ?? 4 ?>; 
-			"
-		<?php endif;?>
+		class="info"
 		>
 		<div class="icon">
 			<?php
