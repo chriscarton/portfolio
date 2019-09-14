@@ -1,18 +1,18 @@
 <div class="template cols-2">
 	<?php
-	echo projectCard(
+	echo card(
 		"img/projets/auto/placeauxcartons/placeauxcartons-accueil.png",
 		"Le site est <i>one page</i>. Le menu fait défiler vers les différentes sections."
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/auto/placeauxcartons/placeauxcartons-actions.png",
 		"Voici l'une de ces sections."
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/auto/placeauxcartons/placeauxcartons-contact.png",
 		"Section contact."
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/auto/placeauxcartons/blogplaceauxcartons.png",
 		"Voici la partie blog (qui est gérée par WordPress)."
 	);

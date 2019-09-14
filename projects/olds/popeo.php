@@ -9,23 +9,23 @@
 </div>
 <div class="template cols-2">
 	<?php 
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/popeo/accueil.png"
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/popeo/accueil-comment-ca-fonctionne.png"
 	);
 	?>
 </div>
 <div class="template cols-3">
 	<?php
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/popeo/accueil-contact.png"
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/popeo/accueil-suite-3.png"
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/popeo/connexion.png"
 	);
 	?>
@@ -41,16 +41,16 @@
 </div>
 <div class="template cols-3">
 	<?php
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/popeo/compte.png"
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/popeo/espace-pub.png"
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/popeo/paiements.png"
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/popeo/tableau-de-bord.png"
 	);
 	?>

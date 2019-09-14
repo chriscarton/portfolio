@@ -1,5 +1,4 @@
 <?php 
-require_once('no-cache.php');
 require_once('projects.php');
 require_once('header.php');
 ?>

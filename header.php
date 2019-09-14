@@ -11,5 +11,6 @@ require_once('functions.php');
     <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/view.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 <body>

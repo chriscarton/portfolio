@@ -18,7 +18,9 @@ function project($project){
 			</h1>
 			<?php if(!empty($project['cover'])): ?>
 			<div class="img-container">
-				<img src="<?= $project['cover'] ?>" alt="">
+				<a href="?p=<?= $project['url'] ?>">
+					<img src="<?= $project['cover'] ?>">
+				</a>
 			</div>
 			<?php endif; ?>
 			<div class="intro">
@@ -34,53 +36,12 @@ function project($project){
 	<?php
 	return ob_get_clean();
 }
-
-/*
-function project($project){
-	ob_start();
-	?>
-	<div class="project" style="background-color:<?php echo $project['background_color'] ?? 'white' ?>;">
-		<div class="background-image" style="background-image:url('<?php echo $project['cover'] ?? ''; ?>');">
-			
-		</div>
-		<div class="overlay"></div>
-		<div class="pattern"></div>
-		<div class="encart">
-			<h1>
-				<?php if(!empty($project['website'])):?>
-					<small>
-						<a href="<?= $project['website'] ?>" target="blank">
-							<?= $project['website'] ?>
-						</a>
-					</small>
-					<br>
-				<?php endif; ?>
-				<?= $project['title'] ?>
-			</h1>
-			<div class="intro">
-				<?= $project['intro'] ?>
-			</div>
-			<?php if(!empty($project['url'])): ?>
-				<div class="btn-container">
-					<a href="?p=<?= $project['url'] ?>" class="btn">Suite <span class="arrow">→</span></a>
-				</div>
-			<?php endif; ?>
-		</div>
-	</div>
-	<?php
-	$project = null;
-	return ob_get_clean();
-}
-*/
 function concept($concept){
 	ob_start();
 	?>
 	<div class="concept">
-		<div class="background-image" style="background-image:url('<?php echo $concept['cover'] ?? ''; ?>');">
-			
+		<div class="bg" style="background-image:url('<?php echo $concept['cover'] ?? ''; ?>');">
 		</div>
-		<div class="overlay"></div>
-		<div class="pattern"></div>
 		<div class="encart">
 			<h2><?= $concept['title'] ?></h2>
 			<div class="link-container">
@@ -106,7 +67,7 @@ function debug($var){
 	return ob_get_clean();
 }
 
-function projectCard($src,$text=null,$arrow="top"){
+function card($src,$text=null,$arrow="top"){
 
 	switch($arrow){
 		case 'top':
@@ -125,16 +86,18 @@ function projectCard($src,$text=null,$arrow="top"){
 
 	ob_start();
 	?>
-	<div class="project-card">
-		<div class="project-img-container">
-			<img src="<?= $src ?>">
+	<div class="card">
+		<div class="img-container">
+			<a class="lightbox" href="<?= $src ?>">
+				<img src="<?= $src ?>">
+			</a>
 		</div>
 		<?php if(!empty($text)): ?>
-		<div class="project-desc">
+		<div class="desc">
 			<div class="icon">
 				<?= $arrow ?>
 			</div>
-			<div class="project-text">
+			<div class="text">
 				<?= $text ?> 
 			</div>
 		</div>
@@ -144,15 +107,17 @@ function projectCard($src,$text=null,$arrow="top"){
 	return ob_get_clean();
 }
 
-function projectInfo($text,$settings,$direction=null){
+function info($text,$settings=null,$direction=null){
 	ob_start();
 	?>
 	<div 
 		class="project-info"
+		<?php if(!empty($settings)):?>
 		style="
-			grid-column-start:1;
-			grid-column-end:4; 
+			grid-column-start:<?= $settings['start'] ?? 1 ?>;
+			grid-column-end:<?= $settings['end'] ?? 4 ?>; 
 			"
+		<?php endif;?>
 		>
 		<div class="icon">
 			<?php

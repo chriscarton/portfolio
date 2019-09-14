@@ -1,15 +1,15 @@
 <div class="template cols-4">
 	<?php 
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/femmesdebretagne/connexion.png"
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/femmesdebretagne/bonsplans.png"
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/femmesdebretagne/agenda.png"
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/femmesdebretagne/communaute.png"
 	);
 	?>

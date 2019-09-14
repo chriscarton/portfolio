@@ -1,18 +1,18 @@
 <div class="template cols-2">
 	<?php
-	echo projectCard(
+	echo card(
 		"img/projets/auto/petropelik/petraccueil.png",
 		"La page d'accueil <b>n'est pas</b> une page blanche !"
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/auto/petropelik/dessinmaquettes.png",
 		"Les différentes liens vers les catégories (organisées en arbre) sont déployés sur l'écran."
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/auto/petropelik/petrdessin.png",
 		"Des dessins reproduits en <i>Svg</i> et animés grace à la librairie <i>Vivus.js</i> s'affichent aléaloirement."
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/auto/petropelik/petravertissement.png",
 		"Les pages avertissement (et contact) sont spéciales et ouvrent une <i>lightbox</i>."
 	);

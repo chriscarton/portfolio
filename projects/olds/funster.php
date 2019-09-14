@@ -1,10 +1,10 @@
 <div class="template cols-2">
 	<?php 
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/funster/frontend/accueil.jpg",
 		"Côté front."
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/funster/frontend/apropos.jpg",
 		"Intégration d'un ensemble de pages dans ce style."
 	);
@@ -12,11 +12,11 @@
 </div>
 <div class="template cols-2">
 	<?php 
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/funster/backend/factures.jpg",
 		"Côté back."
 	);
-	echo projectCard(
+	echo card(
 		"img/projets/sdw/funster/backend/selection.jpg",
 		"Intégration d'un ensemble de pages dans ce style."
 	);
