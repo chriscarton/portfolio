@@ -1,4 +1,4 @@
-<div class="project-template">
+<div class="template">
 	<?php 
 		echo projectCard(
 			"img/projets/auto/emmanuelprin/pageprojet.png",
@@ -12,7 +12,7 @@
 		
 	?>
 </div>
-<div class="project-template cols-3">
+<div class="template cols-3">
 	<?php
 	echo projectCard(
 		"img/projets/auto/emmanuelprin/navigation.png",
@@ -28,7 +28,7 @@
 	);
 	?>
 </div>
-<div class="project-template">
+<div class="template">
 	<?php 
 	echo projectCard(
 		"img/projets/auto/emmanuelprin/referencement-defaut.png",

@@ -1,4 +1,4 @@
-<div class="project-template cols-3">
+<div class="template cols-3">
 	<?php
 	echo projectCard(
 		"img/projets/auto/assurances-lewis/accueil-1.png"
@@ -16,7 +16,7 @@
 	?>
 </div>
 
-<div class="project-container">
+<div class="container">
 	<?php
 	echo projectCard(
 		"img/projets/auto/assurances-lewis/systeme-administration-en-ligne.png",
@@ -25,7 +25,7 @@
 	?>
 </div>
 
-<div class="project-template cols-2">
+<div class="template cols-2">
 <?php
 	echo projectCard(
 		"img/projets/auto/assurances-lewis/exemple-assurances-vehicules.png"

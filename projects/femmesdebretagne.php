@@ -1,4 +1,4 @@
-<div class="project-template cols-4">
+<div class="template cols-4">
 	<?php 
 	echo projectCard(
 		"img/projets/sdw/femmesdebretagne/connexion.png"

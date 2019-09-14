@@ -7,7 +7,7 @@
 	);
 	?>
 </div>
-<div class="project-template cols-2">
+<div class="template cols-2">
 	<?php 
 	echo projectCard(
 		"img/projets/sdw/popeo/accueil.png"
@@ -17,7 +17,7 @@
 	);
 	?>
 </div>
-<div class="project-template cols-3">
+<div class="template cols-3">
 	<?php
 	echo projectCard(
 		"img/projets/sdw/popeo/accueil-contact.png"
@@ -39,7 +39,7 @@
 	);
 	?>
 </div>
-<div class="project-template cols-3">
+<div class="template cols-3">
 	<?php
 	echo projectCard(
 		"img/projets/sdw/popeo/compte.png"

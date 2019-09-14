@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 
 // Sass task: compiles the style.scss file into style.css
 gulp.task('sass', function(){
-    return gulp.src('scss/style.scss')
+    return gulp.src('scss/*.scss')
         .pipe(sass()) // compile SCSS to CSS
         .pipe(gulp.dest('css')); // put final CSS in dist folder
 });

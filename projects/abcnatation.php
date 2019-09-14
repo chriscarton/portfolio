@@ -1,4 +1,4 @@
-<div class="project-container">
+<div class="container">
 	<?php
 	echo projectCard(
 		"img/projets/auto/abcnatation/abcnatation_accueil.png",

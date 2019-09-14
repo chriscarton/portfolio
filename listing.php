@@ -4,18 +4,18 @@
 			<h1>Projets en tant qu'indépendant</h1>
 		</div>
 		<div class="grid">	
-			<?= projectBis($projects['esadvalenciennes']); ?>
+			<?= project($projects['esadvalenciennes']); ?>
 			
 			<div class="subgrid">
-				<?= projectBis($projects['stephenmaas']); ?>
-				<?= projectBis($projects['petropelik']); ?>
+				<?= project($projects['stephenmaas']); ?>
+				<?= project($projects['petropelik']); ?>
 			</div>
 		</div>
 	</section>
 	<section class="row-2">
 		<div class="grid">
 			<?php
-			echo projectBis($projects['placeauxcartons']); 
+			echo project($projects['placeauxcartons']); 
 			?>
 			<div class="subgrid">
 				<div class="info">
@@ -39,17 +39,17 @@
 	<section class="row-3">
 		<div class="grid">
 			<?php
-			echo projectBis($projects['emmanuelprin']);
-			echo projectBis($projects['assuranceslewis']); 
-			echo projectBis($projects['abcnatation']); 
+			echo project($projects['emmanuelprin']);
+			echo project($projects['assuranceslewis']); 
+			echo project($projects['abcnatation']); 
 			?>
 		</div>
 	</section>
 	<section class="row-4">
 		<div class="grid">
 			<?php 
-			echo projectBis($projects['margot']); 
-			echo projectBis($projects['chriscarton']); 
+			echo project($projects['margot']); 
+			echo project($projects['chriscarton']); 
 			?>
 		</div>
 	</section>
@@ -61,17 +61,17 @@
 		</div>
 		<div class="grid">
 			<?php 
-			echo projectBis($projects['popeo']); 
-			echo projectBis($projects['funster']); 
-			echo projectBis($projects['femmesdebretagne']); 
-			echo projectBis($projects['artbox']); 
-			echo projectBis($projects['blogcolony']); 
-			echo projectBis($projects['gtliens']); 
-			echo projectBis($projects['handi']); 
-			echo projectBis($projects['toprhu']); 
-			echo projectBis($projects['bzh']); 
-			echo projectBis($projects['trezulien']); 
-			echo projectBis($projects['festimove']); 
+			echo project($projects['popeo']); 
+			echo project($projects['funster']); 
+			echo project($projects['femmesdebretagne']); 
+			echo project($projects['artbox']); 
+			echo project($projects['blogcolony']); 
+			echo project($projects['gtliens']); 
+			echo project($projects['handi']); 
+			echo project($projects['toprhu']); 
+			echo project($projects['bzh']); 
+			echo project($projects['trezulien']); 
+			echo project($projects['festimove']); 
 			?>
 		</div>
 	</section>

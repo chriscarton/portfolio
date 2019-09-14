@@ -1,4 +1,4 @@
-<div class="project-container">
+<div class="container">
 	<?php 
 	echo projectCard(
 		"img/projets/auto/stephenmaas/maasaccueil.png",
@@ -11,7 +11,7 @@
 	);
 	?>
 </div>
-<div class="project-template cols-2">
+<div class="template cols-2">
 	<?php
 	echo projectCard(
 		"img/projets/auto/stephenmaas/maasproject.png",

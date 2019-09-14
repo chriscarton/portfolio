@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-function projectBis($project){
+function project($project){
 	ob_start();
 	?>
 	<div class="project" style="background-color:<?php echo $project['background_color'] ?? 'white' ?>;">
@@ -35,7 +35,7 @@ function projectBis($project){
 	return ob_get_clean();
 }
 
-
+/*
 function project($project){
 	ob_start();
 	?>
@@ -71,7 +71,7 @@ function project($project){
 	$project = null;
 	return ob_get_clean();
 }
-
+*/
 function concept($concept){
 	ob_start();
 	?>
