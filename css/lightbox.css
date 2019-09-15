@@ -7,15 +7,12 @@
   bottom: 0px;
   z-index: 1000;
   display: none;
-  transition: all 1s;
-  height: 100vh; }
-  @media screen and (min-width: 600px) {
-    #Lightbox {
-      padding: 50px; } }
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  transition: all 1s; }
   #Lightbox.opened {
     display: flex;
-    align-items: center;
-    justify-content: center;
     opacity: 0;
     animation-name: lightboxFadeIn;
     animation-duration: 0.5s;
@@ -56,14 +53,9 @@
     opacity: 0; }
   to {
     opacity: 1; } }
-  #Lightbox .container {
-    position: relative;
-    min-height: 100vh;
-    display: grid;
-    align-items: center;
-    justify-content: center; }
-    #Lightbox .container img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25); }
+  #Lightbox img {
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    max-width: 100vh;
+    object-fit: contain; }

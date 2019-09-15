@@ -53,6 +53,13 @@
 			?>
 		</div>
 	</section>
+	<section id="mrsJune">
+		<div class="grid">
+			<?php 
+			echo project($projects['mrsjune']); 
+			?>
+		</div>
+	</section>
 </div>
 <div id="secondPart">
 	<section class="row-5">

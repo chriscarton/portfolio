@@ -5,9 +5,17 @@ $blue='#5DB3E0';
 $steel='#2C7297';
 $maroon='#996F42';
 $yellow='#F4A700';
-
+$june="#ef282c";
 
 $projects = [
+	'mrsjune'=>[
+		'title'=>'Mrs June',
+		'intro'=>"<p>Proposition d'intégration d'un site vitrine sous React (avec de la vidéo). Septembre 2019.</p>",
+		'background_color'=>$june,
+		'cover'=>'img/projets/auto/june.jpg',
+		'url'=>'mrsjune',
+		//'website'=>'http://www.esad-valenciennes.fr'
+	],
 	'esadvalenciennes'=>[
 		'title'=>'Esad Valenciennes',
 		'intro'=>"<p>Site réalisé intégralement (<i>design graphique, création du logo, développement, mise en production, formation à l'administration</i>) pour <b>l'École Supérieure d'Art et de Design</b> de <b>Valenciennes</b> (anciennement <i>École Supérieure Nationale des Beaux-Arts de Valenciennes</i>).</p> <p>Site réalisé sur <b>CakePHP 2</b> avec authentification, pages, actualités, et système de modules en pages d'accueil et d'informations.</p>",
